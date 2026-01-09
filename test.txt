@@ -4,3 +4,9 @@ your handset model is : samsung and manufactured year is : 1990
 your handset model is : nokia and manufactured year is : 2000 
 your handset model is : nokia and manufactured year is : 2000 
 your handset model is : nokia and manufactured year is : 2000 
+your handset model is : iphone17 and manufactured year is : 2025 
+your handset model is : iphone 17 pro max and manufactured year is : 2025 
+your handset model is : undefined and manufactured year is : 2021 
+your handset model is : i phone xr  and manufactured year is : 2021 
+your handset model is : i phone xr  and manufactured year is : 2021 
+your handset model is : i phone xr  and manufactured year is : 2021 
