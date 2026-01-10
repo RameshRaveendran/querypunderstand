@@ -2,6 +2,8 @@ const express = require('express');
 const fs = require ('fs');
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 //query params ?
 app.get('/products', (req , res ) =>{
@@ -41,7 +43,25 @@ app.get('/users/:id' ,(req ,res) => {
     res.json({
         id
     })
+});
+
+//mutiple params
+app.get('/users/:userId/orders/:orderId',(req , res) => {
+    console.log(req.body);
+
+    const {userId ,orderId} = req.params;
+
+    res.json({
+        userId,
+        orderId
+    })
 })
+
+app.post('/users/:userId/orders', (req, res) => {
+    console.log(req.body); // ✅ works
+    res.json(req.body);
+});
+
 
 app.listen(3003 , () => {
     console.log('server running at 3003');
